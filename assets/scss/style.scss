@@ -1,9 +1,53 @@
+@font-face {
+  font-family: "balsamiq";
+  src: url(../fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+$white: white;
+$primary-color: #ffb000;
+$second-color: #ff6a00;
+
 body {
   font-size: 18px;
-
+  font-family: "roboto";
+  nav {
+    border-bottom: 4px solid $second-color;
+    a {
+      color: $second-color;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+    }
+  }
   .jumbotron {
-    background: url(../img/ramen-3387316_1280.jpg) no-repeat;
+    background: url(../img/ramen-3387316_1280.jpg) no-repeat 0px, 100px;
     background-size: cover;
     height: 700px;
+
+    h1 {
+      color: $primary-color;
+      font-family: "balsamiq";
+      font-size: 8em;
+      text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.527);
+      text-transform: uppercase;
+
+      span {
+        color: $second-color;
+      }
+    }
+    a {
+      background-color: $primary-color;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      &:hover {
+        background-color: $white;
+        color: $primary-color;
+      }
+    }
   }
 }

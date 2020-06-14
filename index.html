@@ -9,12 +9,12 @@
     <meta name="keywords" content="Bootstrap" />
 
     <link rel="icon" href="./assets/img/rocket.png" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -27,88 +27,134 @@
     <title>Bootstrap</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse d-flex justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Restaurant</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
 
+    <div class="container-fluid px-0">
+      <div class="jumbotron rounded-0">
+        <h1 class="text-center pb-5">Le Space N<span>oo</span>dles</h1>
 
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Restaurant</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
-
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-4 bg-light p-5">
+              <p>
+                Bienvenue au Space Noodles, des nouilles bien fraiches faites à
+                partir d'amidon de la patate belge
+              </p>
+            </div>
+            <div class="col-2 offset-1 text-center">
+              <a class="btn btn-lg p-4" href="#" role="button">Commander</a>
+            </div>
+            <div class="col-4 offset-1 bg-light p-5">
+              <p>
+                Promotion jusqu'au 24: 2 menus achetés, une bière offerte
+              </p>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
 
-
-      
-<div class="container-fluid px-0">
-  <div class="jumbotron rounded-0">
-    <h1 class="display-4 text-center">Le Space Noodles</h1>
-    <p class="lead text-center"> Bienvenue au Space Noodles, des nouilles bien fraiches faites à partir d'amidon de la patate belge</p>
-    <hr class="my-4">
-    <p class="text-center">Promotion jusqu'au 24: 2 menus achetés, une bière offerte</p>
-    <a class="btn btn-info btn-lg " href="#" role="button">Commander</a>
-  </div>
-</div>
-
-      
-      <div class="container p-5 bg-light">
+    <div class="container p-5 bg-light">
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Ramen Porc <span class="badge badge-light">12,50€</span></h5>
+            <h5 class="mb-1">
+              Ramen Porc <span class="badge badge-light">12,50€</span>
+            </h5>
             <small>3 days ago</small>
           </div>
-          <p class="mb-1">Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de soja, Tonkatsu – Bouillon à base de porc</p>
+          <p class="mb-1">
+            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
+            soja, Tonkatsu – Bouillon à base de porc
+          </p>
           <small>Donec id elit non mi porta.</small>
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Ramen Boeuf <span class="badge badge-light">12,50€</span></h5>
+            <h5 class="mb-1">
+              Ramen Boeuf <span class="badge badge-light">12,50€</span>
+            </h5>
             <small class="text-muted">3 days ago</small>
           </div>
-          <p class="mb-1">Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de soja, Tonkatsu – Bouillon à base de porc</p>
+          <p class="mb-1">
+            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
+            soja, Tonkatsu – Bouillon à base de porc
+          </p>
           <small class="text-muted">Donec id elit non mi porta.</small>
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Ramen Poulet <span class="badge badge-light">12,50€</span></h5>
+            <h5 class="mb-1">
+              Ramen Poulet <span class="badge badge-light">12,50€</span>
+            </h5>
             <small class="text-muted">3 days ago</small>
           </div>
-          <p class="mb-1">Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de soja, Tonkatsu – Bouillon à base de porc</p>
+          <p class="mb-1">
+            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
+            soja, Tonkatsu – Bouillon à base de porc
+          </p>
           <small class="text-muted">Donec id elit non mi porta.</small>
         </a>
       </div>
+    </div>
 
+    <div class="container-fluid">
       <form action="">
-        <div class="form-group">
-          <label for="nom"> Nom </label>
-          <input type="text" class="form-control" id="nom" placeholder="Doe" />
-        </div>
-        <div class="form-group">
-          <label for="Prénom"> Prénom </label>
-          <input
-            type="text"
-            class="form-control"
-            id="Prénom"
-            placeholder="John"
-          />
+        <div class="form-row">
+          <div class="col-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="nom"
+                placeholder="Prénom*"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="Prénom"
+                placeholder="Nom*"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="e-mail"> Email adress </label>
           <input
             type="email"
             class="form-control"
             id="e-mail"
-            placeholder="John@doe.com"
+            placeholder="Email"
           />
         </div>
 
@@ -134,8 +180,7 @@
           Envoyer <i class="fas fa-paper-plane"></i>
         </button>
       </form>
-
-     
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
