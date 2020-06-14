@@ -51,7 +51,8 @@ body {
     }
   }
   form {
-    .form-control {
+    .form-control,
+    .custom-select {
       padding: 2em;
     }
     .form-group {
@@ -101,6 +102,30 @@ body {
     a {
       font-size: 2em;
       color: $white;
+    }
+  }
+}
+
+@media screen and (width: 500px) {
+  body {
+    font-size: 16px;
+
+    .jumbotron {
+      background: url(../img/ramen-3387316_640.jpg) no-repeat 0px, 100px;
+      height: 300px;
+
+      h1 {
+        font-size: 3em;
+      }
+    }
+
+    #carousel {
+      img {
+        height: 400px;
+      }
+    }
+    #info {
+      height: initial;
     }
   }
 }

@@ -54,7 +54,8 @@ body .jumbotron a:hover {
   color: #ffb000;
 }
 
-body form .form-control {
+body form .form-control,
+body form .custom-select {
   padding: 2em;
 }
 
@@ -110,5 +111,24 @@ body footer {
 body footer a {
   font-size: 2em;
   color: white;
+}
+
+@media screen and (width: 500px) {
+  body {
+    font-size: 16px;
+  }
+  body .jumbotron {
+    background: url(../img/ramen-3387316_640.jpg) no-repeat 0px, 100px;
+    height: 300px;
+  }
+  body .jumbotron h1 {
+    font-size: 3em;
+  }
+  body #carousel img {
+    height: 400px;
+  }
+  body #info {
+    height: initial;
+  }
 }
 /*# sourceMappingURL=style.css.map */
