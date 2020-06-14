@@ -27,34 +27,37 @@
     <title>Bootstrap</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse d-flex justify-content-center"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Restaurant</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#restaurant">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#carousel">Gallerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
-
     <div class="container-fluid px-0">
       <div class="jumbotron rounded-0">
         <h1 class="text-center pb-5">Le Space N<span>oo</span>dles</h1>
@@ -80,51 +83,179 @@
       </div>
     </div>
 
-    <div class="container p-5 bg-light">
+    <div id="restaurant" class="container-fluid p-5">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">
-              Ramen Porc <span class="badge badge-light">12,50€</span>
-            </h5>
-            <small>3 days ago</small>
+        <div class="row">
+          <div class="col-12 col-xl-4">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-3">
+                  Ramen Porc
+                </h5>
+                <small><span class="badge badge-light">12,50€</span></small>
+              </div>
+              <p class="mb-3">
+                Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à
+                base de soja, Tonkatsu – Bouillon à base de porc
+              </p>
+              <small>Donec id elit non mi porta.</small>
+            </a>
           </div>
-          <p class="mb-1">
-            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
-            soja, Tonkatsu – Bouillon à base de porc
-          </p>
-          <small>Donec id elit non mi porta.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">
-              Ramen Boeuf <span class="badge badge-light">12,50€</span>
-            </h5>
-            <small class="text-muted">3 days ago</small>
+
+          <div class="col-12 col-xl-4">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-3">
+                  Ramen Boeuf
+                </h5>
+                <small class="text-muted"
+                  ><span class="badge badge-light">12,50€</span></small
+                >
+              </div>
+              <p class="mb-3">
+                Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à
+                base de soja, Tonkatsu – Bouillon à base de porc
+              </p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
           </div>
-          <p class="mb-1">
-            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
-            soja, Tonkatsu – Bouillon à base de porc
-          </p>
-          <small class="text-muted">Donec id elit non mi porta.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">
-              Ramen Poulet <span class="badge badge-light">12,50€</span>
-            </h5>
-            <small class="text-muted">3 days ago</small>
+
+          <div class="col-12 col-xl-4">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-3">
+                  Ramen Poulet
+                </h5>
+                <small class="text-muted"
+                  ><span class="badge badge-light">12,50€</span></small
+                >
+              </div>
+              <p class="mb-3">
+                Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à
+                base de soja, Tonkatsu – Bouillon à base de porc
+              </p>
+              <small class="text-muted">Donec id elit non mi porta.</small>
+            </a>
           </div>
-          <p class="mb-1">
-            Miso soup – Bouillon à base de miso, Shoyu soup – Bouillon à base de
-            soja, Tonkatsu – Bouillon à base de porc
-          </p>
-          <small class="text-muted">Donec id elit non mi porta.</small>
+        </div>
+      </div>
+    </div>
+    <section id="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/noodle-soup-765706_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/ramen-4647408_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/ramen-4235952_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/ramen-4671492_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/ramen-4647407_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <div id="gallerie" class="container">
+      <div class="row">
+        <div class="col-12 col-xl-2 p-5">
+          <img
+            class="rounded-circle"
+            src="./assets/img/noodle-soup-765706_640.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2 p-5">
+          <img
+            class="rounded-circle"
+            src="./assets/img/ramen-4647408_640.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="col-12 col-xl-2 p-5">
+          <img
+            class="rounded-circle"
+            src="./assets/img/ramen-4235952_640.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2 p-5">
+          <img
+            class="rounded-circle"
+            src="./assets/img/ramen-4671492_640.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="col-12 col-xl-3 p-5">
+          <img
+            class="rounded-circle"
+            src="./assets/img/ramen-4647407_640.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div id="contact" class="container">
       <form action="">
         <div class="form-row">
           <div class="col-12 col-lg-6">
@@ -183,7 +314,7 @@
         </div>
 
         <div class="row text-center">
-          <div class="col">
+          <div class="col pb-5">
             <a class="btn btn-lg p-4 btn-form" href="#" role="button"
               >Envoyer <i class="fas fa-paper-plane"></i
             ></a>
@@ -191,7 +322,83 @@
         </div>
       </form>
     </div>
+    <div id="info" class="container-fluid bg-dark p-0">
+      <div class="row text-white">
+        <div class="col-xl-3 offset-xl-1 col-12 p-3">
+          <h4>Heures d'ouvertures:</h4>
+          <ul class="pl-4">
+            <li>Lundi | 11:30 - 14:30</li>
+            <li>Mardi | 11:30 - 14:30</li>
+            <li>Mercredi | 11:30 - 14:30</li>
+            <li>Jeudi | 11:30 - 14:30</li>
+            <li>vendredi | 11:30 - 14:30</li>
+            <li>Samedi | 11:30 - 14:30</li>
+            <li>Dimanche | fermé</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 offset-xl-1 col-12 p-3">
+          <h4>Adress:</h4>
 
+          <ul class="pl-4">
+            <li>Rue de mulhouse 36</li>
+            <li>4000 Liège</li>
+            <li>04 60 76 76 76</li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-12 h-100">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;coord=50.6330005,5.586963306594043&amp;q=Rue%20de%20Mulhouse%2036+(Le%20Space%20Noodle)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            ><a href="https://www.maps.ie/draw-radius-circle-map/"
+              >Create radius map</a
+            ></iframe
+          >
+
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row align-items-center text-white">
+          <div class="col-12 text-center p-2">
+            No Copyright 2020
+          </div>
+          <div class="col-12 text-center p-2">
+            <a
+              class="px-2"
+              target="_blank"
+              href="https://linkedin.com/in/amauryhenrottay"
+              title="Compte linkedin"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+
+            <a
+              class="px-2"
+              target="_blank"
+              href="https://github.com/Amauryh24"
+              title="Compte github"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a
+              class="px-2"
+              target="_blank"
+              href="https://www.freecodecamp.org/amauryh24"
+              title="Compte freecodecamp"
+              ><i class="fab fa-free-code-camp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
