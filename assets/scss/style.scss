@@ -50,4 +50,23 @@ body {
       }
     }
   }
+  form {
+    .form-control {
+      padding: 2em;
+    }
+    .form-group {
+      textarea {
+        height: 312px;
+      }
+    }
+    .btn-form {
+      background-color: $primary-color;
+      color: $second-color;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }

@@ -53,4 +53,23 @@ body .jumbotron a:hover {
   background-color: white;
   color: #ffb000;
 }
+
+body form .form-control {
+  padding: 2em;
+}
+
+body form .form-group textarea {
+  height: 312px;
+}
+
+body form .btn-form {
+  background-color: #ffb000;
+  color: #ff6a00;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+body form .btn-form:hover {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
