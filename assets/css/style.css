@@ -8,6 +8,11 @@
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: "robotoLight";
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
 body {
   font-size: 18px;
   font-family: "roboto";
@@ -24,10 +29,17 @@ body nav a {
   letter-spacing: 0.1em;
 }
 
+body .parallax img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: fixed;
+  z-index: -9999;
+}
+
 body .jumbotron {
-  background: url(../img/ramen-3387316_1280.jpg) no-repeat 0px, 100px;
-  background-size: cover;
-  height: 700px;
+  background-color: initial;
+  padding-bottom: 50px;
 }
 
 body .jumbotron h1 {
@@ -42,62 +54,92 @@ body .jumbotron h1 span {
   color: #ff6a00;
 }
 
-body .jumbotron a {
+body .jumbotron .carousel-inner {
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+body .jumbotron .carousel-inner .carousel-item {
+  background-color: #302e2e;
+}
+
+body .jumbotron .carousel-inner .carousel-item .carousel-caption {
+  position: initial;
+  width: 95%;
+  height: 300px;
+  margin: auto;
+}
+
+body .jumbotron .carousel-inner .carousel-item .carousel-caption h2 {
+  font-family: "robotoLight";
+  font-size: 2em;
+  font-weight: 100;
+}
+
+body .jumbotron .carousel-inner .carousel-item .carousel-caption a {
   background-color: #ffb000;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-body .jumbotron a:hover {
+body .jumbotron .carousel-inner .carousel-item .carousel-caption a:hover {
   background-color: white;
   color: #ffb000;
 }
 
-body form .form-control {
+body #carte {
+  border-bottom: 4px solid #ff6a00;
+  border-top: 4px solid #ff6a00;
+}
+
+body #carte img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+body #carte p a:hover {
+  font-size: 1.1em;
+  color: #ffb000;
+}
+
+body #contact form .form-control {
   padding: 2em;
 }
 
-body form .custom-select option {
-  color: red;
-  padding: 2em;
-}
-
-body form .form-group textarea {
+body #contact form .form-group textarea {
   height: 294px;
 }
 
-body form .btn-form {
+body #contact form .btn-form {
   background-color: #ffb000;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-body form .btn-form:hover {
+body #contact form .btn-form:hover {
   color: #ff6a00;
-}
-
-body #gallerie {
-  padding-top: 50px;
-}
-
-body #gallerie img {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 4px solid #ff6a00;
-}
-
-body #carousel {
-  padding-top: 50px;
 }
 
 body #carousel img {
   height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body #eventail {
+  border-bottom: 4px solid #ff6a00;
+  border-top: 4px solid #ff6a00;
+}
+
+body #eventail img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #ff6a00;
 }
 
 body #contact {
