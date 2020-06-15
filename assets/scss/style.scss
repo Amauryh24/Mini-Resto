@@ -51,13 +51,18 @@ body {
     }
   }
   form {
-    .form-control,
-    .custom-select {
+    .form-control {
       padding: 2em;
+    }
+    .custom-select {
+      option {
+        color: red;
+        padding: 2em;
+      }
     }
     .form-group {
       textarea {
-        height: 312px;
+        height: 294px;
       }
     }
     .btn-form {

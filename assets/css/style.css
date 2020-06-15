@@ -54,13 +54,17 @@ body .jumbotron a:hover {
   color: #ffb000;
 }
 
-body form .form-control,
-body form .custom-select {
+body form .form-control {
+  padding: 2em;
+}
+
+body form .custom-select option {
+  color: red;
   padding: 2em;
 }
 
 body form .form-group textarea {
-  height: 312px;
+  height: 294px;
 }
 
 body form .btn-form {
