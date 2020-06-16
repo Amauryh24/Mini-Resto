@@ -146,9 +146,6 @@ body {
   #contact {
     padding-top: 50px;
   }
-  #info {
-    height: 300px;
-  }
 
   footer {
     background-color: $second-color;
@@ -159,7 +156,7 @@ body {
   }
 }
 
-@media screen and (width: 500px) {
+@media screen and (width: 768px) {
   body {
     font-size: 16px;
 
@@ -176,9 +173,6 @@ body {
       img {
         height: 400px;
       }
-    }
-    #info {
-      height: initial;
     }
   }
 }
