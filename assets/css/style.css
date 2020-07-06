@@ -83,6 +83,7 @@ body .jumbotron .carousel-inner .carousel-item .carousel-caption a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 1em;
 }
 
 body .jumbotron .carousel-inner .carousel-item .carousel-caption a:hover {

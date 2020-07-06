@@ -79,6 +79,7 @@ body {
             color: $white;
             text-transform: uppercase;
             letter-spacing: 0.1em;
+            font-size: 1em;
             &:hover {
               background-color: $white;
               color: $primary-color;
@@ -179,10 +180,6 @@ body {
     }
     #eventail {
       background-color: white;
-      img {
-        // width: 50%;
-        // height: 100px;
-      }
     }
   }
 }
