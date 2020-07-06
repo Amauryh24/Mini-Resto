@@ -45,7 +45,7 @@ body .jumbotron {
 body .jumbotron h1 {
   color: #ffb000;
   font-family: "balsamiq";
-  font-size: 7vw;
+  font-size: 8vw;
   text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.527);
   text-transform: uppercase;
 }
@@ -56,7 +56,7 @@ body .jumbotron h1 span {
 
 body .jumbotron .carousel-inner {
   height: 300px;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -74,8 +74,8 @@ body .jumbotron .carousel-inner .carousel-item .carousel-caption {
 
 body .jumbotron .carousel-inner .carousel-item .carousel-caption h2 {
   font-family: "robotoLight";
-  font-size: 2vw;
-  font-weight: 100;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 body .jumbotron .carousel-inner .carousel-item .carousel-caption a {
@@ -158,10 +158,14 @@ body footer a {
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 3vw;
   }
   body .jumbotron {
     height: 300px;
+  }
+  body .jumbotron .carousel-inner {
+    height: 240px;
+    width: 50%;
   }
   body #carousel img {
     height: 200px;
@@ -170,10 +174,6 @@ body footer a {
   }
   body #eventail {
     background-color: white;
-  }
-  body #eventail img {
-    width: 50%;
-    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

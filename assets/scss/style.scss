@@ -43,7 +43,7 @@ body {
     h1 {
       color: $primary-color;
       font-family: "balsamiq";
-      font-size: 7vw;
+      font-size: 8vw;
       text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.527);
       text-transform: uppercase;
 
@@ -54,7 +54,7 @@ body {
 
     .carousel-inner {
       height: 300px;
-      width: 30%;
+      width: 50%;
 
       margin: 0 auto;
 
@@ -71,8 +71,8 @@ body {
 
           h2 {
             font-family: "robotoLight";
-            font-size: 2vw;
-            font-weight: 100;
+            font-size: 3vw;
+            font-weight: bold;
           }
           a {
             background-color: $primary-color;
@@ -160,11 +160,15 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 3vw;
 
     .jumbotron {
       // background: url(../img/ramen-3387316_640.jpg) no-repeat 0px, 100px;
       height: 300px;
+      .carousel-inner {
+        height: 240px;
+        width: 50%;
+      }
     }
 
     #carousel {
@@ -176,8 +180,8 @@ body {
     #eventail {
       background-color: white;
       img {
-        width: 50%;
-        height: 100px;
+        // width: 50%;
+        // height: 100px;
       }
     }
   }
